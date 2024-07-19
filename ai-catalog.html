@@ -397,7 +397,7 @@
         formData.append("image_file", input.files[0]);
     
         uploadButton.disabled = true;
-        uploadButton.innerHTML = "Sedang Menghapus...";
+        uploadButton.innerHTML = "Loading...";
     
         fetch("https://api.remove.bg/v1.0/removebg", {
             method: "post",
